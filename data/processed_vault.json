@@ -1,0 +1,92 @@
+[
+    {
+        "chunk_id": "document.txt_chunk_0",
+        "text": "Company Overview  FAQ Portal Welcome to the internal knowledge base. Here are the core guidelines for the team: Q: What are the official working hours and hybrid policies? A: Our core hours are 8:30 AM to 3:30 PM. We follow a hybrid model where teams gather in-office on every other day except wednesdays or thursdays. Remote work is optional on either days.Leave is on every saturdays and sundays Q: How do I submit an expense report for project components? A: All receipts must be uploaded to the i",
+        "metadata": {
+            "title": "Company Overview and Team FAQs",
+            "tags": [
+                "hr",
+                "faq",
+                "policy",
+                "onboarding"
+            ],
+            "type": "documentation",
+            "date": "2026-06-09"
+        }
+    },
+    {
+        "chunk_id": "document.txt_chunk_1",
+        "text": "ponents? A: All receipts must be uploaded to the internal dashboard under the 'Finance' tab by the last Friday of each week.",
+        "metadata": {
+            "title": "Company Overview and Team FAQs",
+            "tags": [
+                "hr",
+                "faq",
+                "policy",
+                "onboarding"
+            ],
+            "type": "documentation",
+            "date": "2026-06-09"
+        }
+    },
+    {
+        "chunk_id": "document.txt_chunk_0",
+        "text": "Standard Operating Procedure: Safe Production Deployments Document ID: SOP-ENG-042 Strict adherence to these deployment parameters is mandatory for all engineering tracks: 1. Code Freeze Windows: Direct merging or deployment targeting pipeline environments is strictly frozen after 3:50 PM on Fridays to guarantee system weekend stability. 2. Mandatory Peer Review: No pull request may pass to production staging without a minimum of two independent approvals from senior architecture leads. 3. Testi",
+        "metadata": {
+            "title": "SOPs and Internal Best Practices",
+            "tags": [
+                "devops",
+                "sop",
+                "security",
+                "deployment"
+            ],
+            "type": "standard_operating_procedure",
+            "date": "2026-06-09"
+        }
+    },
+    {
+        "chunk_id": "document.txt_chunk_1",
+        "text": "approvals from senior architecture leads. 3. Testing Coverage: Comprehensive automated testing runs must pass with 100 success rate.",
+        "metadata": {
+            "title": "SOPs and Internal Best Practices",
+            "tags": [
+                "devops",
+                "sop",
+                "security",
+                "deployment"
+            ],
+            "type": "standard_operating_procedure",
+            "date": "2026-06-09"
+        }
+    },
+    {
+        "chunk_id": "document.txt_chunk_0",
+        "text": "Technical Tutorial: Building Independent API Connections When integrating internal tools with our backend management gateway, developers must pass the secure system token within the HTTP authorization header layout. Python Gateway Verification Snippet: ```python import requests headers   'Authorization': 'Bearer SYS_SECURE_TOKEN_2026', 'Content-Type': 'applicationjson'  response  requests.get('[https:api.internalv1status](https:api.internalv1status)', headersheaders) print(f'Gateway Connection S",
+        "metadata": {
+            "title": "Technical Tutorials and API Snippets",
+            "tags": [
+                "backend",
+                "api",
+                "python",
+                "developer"
+            ],
+            "type": "tutorial",
+            "date": "2026-06-09"
+        }
+    },
+    {
+        "chunk_id": "document.txt_chunk_1",
+        "text": "us)', headersheaders) print(f'Gateway Connection Status: response.status_code') ```",
+        "metadata": {
+            "title": "Technical Tutorials and API Snippets",
+            "tags": [
+                "backend",
+                "api",
+                "python",
+                "developer"
+            ],
+            "type": "tutorial",
+            "date": "2026-06-09"
+        }
+    }
+]
