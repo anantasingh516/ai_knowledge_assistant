@@ -1,0 +1,8 @@
+### Standard Operating Procedure: Safe Production Deployments
+
+Document ID: SOP-ENG-042
+Strict adherence to these deployment parameters is mandatory for all engineering tracks:
+
+1. Code Freeze Windows: Direct merging or deployment targeting pipeline environments is strictly frozen after 3:50 PM on Fridays to guarantee system weekend stability.
+2. Mandatory Peer Review: No pull request may pass to production staging without a minimum of two independent approvals from senior architecture leads.
+3. Testing Coverage: Comprehensive automated testing runs must pass with 100% success rate.

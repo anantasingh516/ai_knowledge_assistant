@@ -1,0 +1,9 @@
+### Company Overview & FAQ Portal
+
+Welcome to the internal knowledge base. Here are the core guidelines for the team:
+
+Q: What are the official working hours and hybrid policies?
+A: Our core hours are 8:30 AM to 3:30 PM. We follow a hybrid model where teams gather in-office on every other day except wednesdays or thursdays. Remote work is optional on either days.Leave is on every saturdays and sundays
+
+Q: How do I submit an expense report for project components?
+A: All receipts must be uploaded to the internal dashboard under the 'Finance' tab by the last Friday of each week.
