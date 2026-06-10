@@ -76,11 +76,13 @@ class DataIngestionPipeline:
 
         cleaned_text = self.clean_text(raw_text)
         chunks = self.split_into_chunks(cleaned_text)
-
         processed_chunks = []
         for i, chunk_text in enumerate(chunks):
+            parent_folder = os.path.basename(os.path.dirname(file_path))
+            file_name = os.path.basename(file_path)
+            
             processed_chunks.append({
-                "chunk_id": f"{os.path.basename(file_path)}_chunk_{i}",
+                "chunk_id": f"{parent_folder}_{file_name}_chunk_{i}",
                 "text": chunk_text,
                 "metadata": metadata or {}
             })
