@@ -15,41 +15,41 @@ class VectorSearchEngine:
         self.chroma_client = chromadb.PersistentClient(path=CHROMA_DIR)
         self.collection = self.chroma_client.get_or_create_collection(name="knowledge_vault")
     def index_processed_vault(self):
-        """Loads chunks from processed_vault.json, embeds them, and stores them in Chroma."""
-        if not os.path.exists(VAULT_PATH):
-            print(f"[ERROR] Could not find {VAULT_PATH}. Please run core/ingest.py first!")
+        """
+        Regenerates processed_vault.json from the data folder, 
+        then synchronizes those chunks into the ChromaDB vector collections.
+        """
+        import os
+        import json
+        from core.ingest import DataIngestionPipeline
+        
+        print("[INDEX] Initializing raw data folder scan...")
+        pipeline = DataIngestionPipeline(chunk_size=500, chunk_overlap=50)
+        pipeline.scan_and_ingest_data_vault()
+        base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        vault_path = os.path.join(base_dir, "data", "processed_vault.json")
+        
+        if not os.path.exists(vault_path):
+            print(f"[ERROR] Processed vault missing at: {vault_path}")
             return
-        with open(VAULT_PATH, "r", encoding="utf-8") as f:
+            
+        with open(vault_path, "r", encoding="utf-8") as f:
             chunks = json.load(f)
-
-        if not chunks:
-            print("[WARN] Your processed_vault.json is empty. Nothing to index.")
-            return
-
-        print(f"\n[INDEX] Preparing to vectorize {len(chunks)} text chunks...")
-        documents = []
-        metadatas = []
-        ids = []
-
+            
+        print(f"[INDEX] Synchronizing {len(chunks)} text chunks to ChromaDB...")
+        
         for chunk in chunks:
-            documents.append(chunk["text"])
-            ids.append(chunk["chunk_id"])
-            meta = chunk["metadata"].copy()
-            if "tags" in meta and isinstance(meta["tags"], list):
-                meta["tags"] = ", ".join(meta["tags"])
-            metadatas.append(meta)
-
-        print("[INDEX] Generating embeddings (converting text to mathematical vectors)...")
-        embeddings = self.model.encode(documents).tolist()
-
-        print("[INDEX] Saving vectors and tracking metadata inside ChromaDB...")
-        self.collection.upsert(
-            embeddings=embeddings,
-            documents=documents,
-            metadatas=metadatas,
-            ids=ids
-        )
-        print(f"Vector Indexing Complete! Stored securely in: data/chroma_db/")
+            meta = chunk.get("metadata", {})
+            if not isinstance(meta, dict) or len(meta) == 0:
+                fallback_source = chunk["chunk_id"].split("_chunk_")[0]
+                meta = {"source": fallback_source}
+            self.collection.upsert(
+                ids=[chunk["chunk_id"]],
+                documents=[chunk["text"]],
+                metadatas=[meta] # <-- Uses our safe, non-empty dictionary
+            )
+            
+        print("Vector Index Syncing Complete!")
 
     def search(self, query_text, top_k=2):
         """Converts user query to a vector and retrieves the top-k most semantically similar chunks."""

@@ -56,10 +56,33 @@ def generate_excel_sheet(question, answer, citations):
         df.to_excel(writer, index=False, sheet_name="RAG Report")
     bio.seek(0)
     return bio
+# --- UPDATE THE SIDEBAR INTERFACE IN app.py ---
 with st.sidebar:
     st.title("⚙️ Control Center")
     st.markdown("---")
+    st.subheader("📁 Upload New Documents")
+    uploaded_file = st.file_uploader(
+        "Drop a file to expand the AI's knowledge base:", 
+        type=["txt", "pdf", "docx", "csv"]
+    )
     
+    if uploaded_file is not None:
+        if st.button("🚀 Process & Ingest File", use_container_width=True):
+            with st.spinner("Streaming data bytes to core embedding engine..."):
+                try:
+                    files = {"file": (uploaded_file.name, uploaded_file.getvalue(), uploaded_file.type)}
+                    upload_url = "http://127.0.0.1:8000/upload"
+                    
+                    response = requests.post(upload_url, files=files, timeout=120)
+                    
+                    if response.status_code == 200:
+                        st.success(f"Success! {uploaded_file.name} is now live in the knowledge matrix.")
+                    else:
+                        st.error(f"Error packing document: {response.json().get('detail')}")
+                except Exception as e:
+                    st.error(f"Connection to backend failed: {e}")
+
+    st.markdown("---")
     st.subheader("Database Management")
     if st.button("🔄 Trigger Manual Re-Index", use_container_width=True, type="primary"):
         with st.spinner("Scanning data vault and updates..."):
@@ -72,10 +95,7 @@ with st.sidebar:
                 st.error(f"Re-indexing failed: {e}")
                 
     st.markdown("---")
-    st.caption("AI Assistant Version 1.0 (Ollama Local Setup)")
-st.title("Enterprise Knowledge Assistant")
-st.markdown("Ask questions grounded exclusively in your internal standard operating procedures and technical documentation.")
-
+    st.caption("AI Assistant Version 1.1 (Ollama Local Setup)")
 
 for message in st.session_state.messages:
     with st.chat_message(message["role"]):
@@ -94,7 +114,7 @@ if user_query := st.chat_input("Ask a question about internal procedures..."):
         with st.spinner("Searching document vault and generating grounded response..."):
             try:
                 payload = {"question": user_query, "top_k": 2}
-                res = requests.post(API_URL, json=payload, timeout=60)
+                res = requests.post(API_URL, json=payload, timeout=None)
                 
                 if res.status_code == 200:
                     data = res.json()

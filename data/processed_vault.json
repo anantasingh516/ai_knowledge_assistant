@@ -1,5 +1,690 @@
 [
     {
+        "chunk_id": "data_day 2.docx_chunk_0",
+        "text": "WEEK 1 DAY 2 Explore KidCare - Access the staging environment for KidCare - Understand user flow for a parentguardian - Summarize core features and value proposition. Core Features  Value Proposition Intelligent Safety Guardrails: The platform features automatic dosage calculations for common pediatric medications along with built-in safety alerts that trigger warnings if overlapping doses are attempted within tight time frames. Unified Health Matrix: Instead of juggling scattered paper notes, c",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_day 2.docx_chunk_1",
+        "text": "trix: Instead of juggling scattered paper notes, calendar alerts, and physical growth cards, parents can centralize symptoms, clinical notes, vaccine schedules, and growth charts in a single repository. Granular Timeline Logging: Supports chronological historical data entry (\"Add Past Log\"), allowing caregivers to retroactively plot out exactly when a symptom spiked or when a treatment was administered. The Value Proposition: For parents and guardians, KidCare eliminates the anxiety of clinical",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_day 2.docx_chunk_2",
+        "text": "dians, KidCare eliminates the anxiety of clinical uncertainty and structural cognitive overload. By transforming fragmented, stressful health tracking into a systematic, clear, and highly scannable dashboard, it gives families complete control and absolute peace of mind during critical care windows. Understand Fennex Visit https:fennex.net Write a short summary of what Fennex does understand how and on what projects we work with Fennex What Fennex Does Fennex converts fragmented, siloed data (li",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_day 2.docx_chunk_3",
+        "text": "x Does Fennex converts fragmented, siloed data (like spreadsheets and manual paper forms) into integrated, live digital platforms. By using predictive analytics, machine learning, and mobile-intuitive tools, they allow corporate offices and frontline crews to track risk indicators in real time. Their products are highly integrated into the Microsoft ecosystem (Azure SQL, SharePoint, Power BI, Microsoft 365), and their solutions have successfully reduced operational recordable incident rates by u",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_day 2.docx_chunk_4",
+        "text": "reduced operational recordable incident rates by up to 43 across more than 75 offshore assets globally. Key Flagship Products FennexSafe: A modular HSEQ (Health, Safety, Environment, and Quality) platform that transforms manual safety reporting and corrective actions into automated, compliance-ready enterprise workflows. BBSS (Behavior-Based Safety Solution): A data-driven, AI-powered mobile solution that enables offshore crews to capture, report, and verify safety observations directly at the p",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_day 2.docx_chunk_5",
+        "text": ", and verify safety observations directly at the point of risk. WindSafe: A data-driven digital safety and assurance platform custom-built to scale their proven oil and gas risk frameworks directly into the offshore wind and renewables sector. How and On What Projects We Work With Fennex Our engineering team operates as a strategic development and integration partner alongside Fennexs Microsoft-certified engineering squads. We collaborate closely on scaling their data pipelines, perfecting cross",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_day 2.docx_chunk_6",
+        "text": "on scaling their data pipelines, perfecting cross-platform integrations, and rolling out advanced predictive modules. Our active technical scope is divided across two primary initiatives: Backend Optimization for BBSS  FennexSafe: We support the architecture and maintenance of the secure, real-time data ingestion pipelines that process thousands of frontline safety observation reports coming from deepwater rigs and offshore drillships (for major global contractors like Noble Corporation, Transo",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_day 2.docx_chunk_7",
+        "text": "global contractors like Noble Corporation, Transocean, and EnQuest). We ensure low-latency data replication to their Azure SQL databases so corporate dashboards update instantly. AI Engine Integration for WindSafe: Following WindSafe's commercial rollout and graduation from the ORE Catapult Launch Academy, we are actively helping Fennex integrate predictive machine learning models. This involves structuring historical leading indicators to help the platform forecast upcoming operational risk fa",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_day 2.docx_chunk_8",
+        "text": "the platform forecast upcoming operational risk factors, allowing offshore wind developers and contractors to deploy targeted safety interventions before an incident happens. Basics of SharePoint - Read an intro guide or video (link to be shared internally) - Understand key uses like document libraries, sites, and workflows - Note 3 use cases where SharePoint can help in enterprise workflows. 3 Enterprise Workflow Use Cases Use Case 1: Automated cross-departmental Document Approval Loops The Wor",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_day 2.docx_chunk_9",
+        "text": "cross-departmental Document Approval Loops The Workflow: When an engineer uploads a technical blueprint or vendor contract to a SharePoint Document Library, they tag its metadata status as \"Pending Review.\" The Mechanics: Power Automate instantly detects the new file, locks it to prevent further edits, and triggers a sequential approval notification via Microsoft Teams and email to the Legal and Engineering leads. Once both provide digital signatures, the system changes the document status metad",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_day 2.docx_chunk_10",
+        "text": "ures, the system changes the document status metadata to \"Approved,\" moves it to an immutable directory, and notifies the original uploader. Use Case 2: Strict Compliance, Retention, and Audit Trail Management The Workflow: Managing Standard Operating Procedures (SOPs) or Health, Safety, and Environment (HSE) manuals that require routine compliance verification. The Mechanics: Documents are stored with mandatory check-incheck-out rules so only one authorized user can edit a file at a time. Share",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_day 2.docx_chunk_11",
+        "text": "e authorized user can edit a file at a time. SharePoint generates an unalterable, comprehensive audit trail capturing user timestamps and precise modifications. Additionally, retention policies can be set to automatically flag the document for a mandatory compliance review every 12 months, or trigger a secure archival sequence after a specified number of years. Use Case 3: Structured Employee Onboarding  Lifecycle Management The Workflow: Provisioning assets, training modules, and policy sign-of",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_day 2.docx_chunk_12",
+        "text": "oning assets, training modules, and policy sign-offs for newly hired team members. The Mechanics: A dedicated HR SharePoint site aggregates onboarding checklists, tax documents, and departmental wikis. When a new user profile is created in the system, a localized workflow automatically triggers, generating a personalized onboarding checklist populated with tasks tailored to their role metadata (e.g., specific engineering modules for a B.Tech grad). The workflow tracks their progress as they comp",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_day 2.docx_chunk_13",
+        "text": "). The workflow tracks their progress as they complete training and logs their digital sign-off on corporate policy documents for HR compliance. Browse  Document Use Cases (New) Pick 1 live use case per product: - FloCard - Tree Planters - KidCare Write 23 lines each: - What problem it solves - Who uses it - Whats the core value delivered The following analysis highlights exactly how our product architectures resolve specific, real-world operational challenges for target user groups in live depl",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_day 2.docx_chunk_14",
+        "text": "nal challenges for target user groups in live deployments. FloCard (Live Corporate Event Networking Use Case) What problem it solves: Eliminates the physical printing waste, high carbon footprints, and immediate lossfragmentation of lead data during massive corporate expos and international trade conferences. Who uses it: Enterprise sales divisions, event organizers, and corporate exhibitors participating in large-scale networking summits. Whats the core value delivered: Replaces physical cards",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_day 2.docx_chunk_15",
+        "text": "the core value delivered: Replaces physical cards with instant, decentralized contact data exchange over the FLO blockchain, automatically syncing new leads directly into corporate CRMs while reporting real-time scope-3 carbon reduction metrics based on paper saved. Tree Planters  Planters App (Live Offline Reforestation Logging Use Case) What problem it solves: Solves the critical \"data validation gap\" for field teams working in remote, extreme-weather reforestation blocks where lack of cell co",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_day 2.docx_chunk_16",
+        "text": "weather reforestation blocks where lack of cell coverage leads to lost metrics and manual spreadsheet errors. Who uses it: Professional tree planters, field foremen, and environmental site auditors tracking large-scale planting compliance. Whats the core value delivered: Provides an offline-first mobile system that uses AI camera recognition to identify sapling species and automatically tags precise GPS coordinates and timestamps, queueing the data locally to sync transparently once back online.",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_day 2.docx_chunk_17",
+        "text": "ta locally to sync transparently once back online. KidCare (Live Pediatric Continuity of Care Use Case) What problem it solves: Eliminates dangerous gaps in medical history and dosage timing errors when a sick child is being handed off between multiple alternating caregivers (e.g., parents, grandparents, and hired nannies). Who uses it: Busy working parents, co-parents, and primary pediatric guardians managing continuous active medical treatment at home. Whats the core value delivered: Centraliz",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_day 2.docx_chunk_18",
+        "text": "at home. Whats the core value delivered: Centralizes a live, shared, chronological symptom and medication timeline equipped with mandatory countdown locks, ensuring all caretakers see exactly when the last dose was given and can export an airtight clinical PDF history directly for the pediatrician. Make a substack post as per instructions on onboarding channel https:open.substack.compubcoolcareerpecosystem-integration-deconstructing?r7uj6ecutm_campaignpost-expanded-shareutm_mediumweb",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_day 2.docx_chunk_19",
+        "text": "mpaignpost-expanded-shareutm_mediumweb",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_0",
+        "text": "21CSC204J- Design and Analysis of Algorithm Unit 1 Introduction to Algorithm Design 1.1.Fundamentals of Problem Solving Problem solving is both an art and science. As there are no guidelines available to solve the problem, the problem solving is called an art as high creativity is needed for solving problems effectively. Thus by art, we mean one has to be creative, novel and adventurous and by science, we mean the problem solving should be based on sound mathematical and logical guidelines. The",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_1",
+        "text": "on sound mathematical and logical guidelines. The problem solving stages are given as follows: 1. Problem Understanding 2. Algorithm Planning 3. Design of algorithms 4. Algorithm Verification and Validation 5. Algorithm analysis 6. Algorithm Implementation 7. Perform post-mortem analysis Problem Understanding: The problem solving starts with understanding of the problem and aims at providing a detailed problem statement. There should not be any confusion in the problem statement. As the mistakes",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_2",
+        "text": "onfusion in the problem statement. As the mistakes in understanding the problem may affect the development of algorithms. Planning of an algorithm Once problem statement is produced, the planning of algorithm starts. This phase requires selection of computing model and data structures. A computational model is a mathematical model. Data structure is a domain that deals wit h data storage along with its relationships. Data structures can have impact on the efficiency of the algorithms. Therefore,",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_3",
+        "text": "ct on the efficiency of the algorithms. Therefore, algorithms and data structures together often constitute important aspect of problem solving. A popular statement in computer scien ce is Algorithm  Data structure  Program as a wrong selection of a data structure often proves fatal in problem solving. Design of Algorithms Algorithm design is a way of developing the algorithmic solutions using the appropriate design strategy or paradigm. Algorithm Verification and validation Algorithm verificati",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_4",
+        "text": "m Verification and validation Algorithm verification and validation is the process of checking algorithm correctness. An algorithm is expected to give correct output for all valid inputs. This process is called algorithm validation. Once val idation is over, program proving or program verification starts. Verification is done by giving mathematical proofs. Mathematical proofs are rigorous and better than scientific methods. Program correctness itself a major study by itself. Algorithm Analysis O",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_5",
+        "text": "self a major study by itself. Algorithm Analysis Once the algorithm is proved correct, then the analysis starts. Analysis is important for two reasons. They are as follows: 1. To decide efficiency of algorithms 2. To compare algorithms for deciding the effective solutions for a given problem. Implementation of algorithm as a program and performance analysis After the algorithms are designed, it is implemented as a program. This stage requires the selection of a programming language. After the pr",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_6",
+        "text": "selection of a programming language. After the program is written, then the program must be tested. Sometimes, the program may not give expected results due to errors. The process of removing the errors is called debugging. Once program is available, they can be verified with a bench mark dataset. It is called experimental algorithmics. This is called performance analysis. Postmortem analysis A theoretical best solution for the given problem is called lower bound of the algorithm. The worst cas",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_7",
+        "text": "called lower bound of the algorithm. The worst case estimate of behavior of the algorithm is called upper bound. The difference between upper and lower bound is called algorithmic gap. Refining the algorithms is to bring these gaps short by reefing planning, design, implementation and analysis. Thus problem solving is not linear but rather this is a cycle. What is an Algorithm? A finite set of instructions or logi c, written in order, to accomplish a certain predefined task. Algorithm is not the",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_8",
+        "text": "sh a certain predefined task. Algorithm is not the complete code or program. It is just the core logic (solution) of a problem. It can be expressed either as an informal high level description as pseudo code or using a flowchart. Characteristics of an Algorithm Well defined Input: An algorithm should have 0 or more well defined inputs. Well defined Output: An algorithm should have 1 or more well defined outputs Unambiguous: Algorithm should be clear and unambiguous. Finiteness: Algorithms must t",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_9",
+        "text": "ear and unambiguous. Finiteness: Algorithms must terminate after a finite no. of steps. Feasibility: Should be feasible with the available resources. Language Independent: An algorithm should have step -by-step directions which should be independent of any programming code. What is a Pseudocode? A Pseudocode is defined as a step-by-step description of an algorithm. Pseudocode does not use any programming language in its representation instead it uses the simple English language text as it is int",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_10",
+        "text": "uses the simple English language text as it is intended for human understanding rather than machine reading. Pseudocode is the intermediate state between an idea and its implementation(code) in a high -level language Difference between Algorithm and Pseudocode Why to design an Algorithm? Designing an algorithm is a fundamental step in problem-solving, especially in computer science, as it provides a structured and efficient way to address complex problems. 1. To Solve Problems Systematically  An",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_11",
+        "text": "problems. 1. To Solve Problems Systematically  An algorithm provides a clear, step-by-step procedure to solve a problem.  It ensures that the problem is approached logically rather than relying on guesswork or trial - and-error. 2. To Ensure Efficiency  Well-designed algorithms optimize the use of resources such as time (execution speed) and space (memory usage).  For large-scale problems, an efficien t algorithm can mean the difference between solving a problem in seconds versus hours. 3. To H",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_12",
+        "text": "solving a problem in seconds versus hours. 3. To Handle Complexity  Complex problems, like sorting large datasets, finding shortest paths in graphs, or analyzing big data, require structured approaches that algorithms provide.  Breaking down a complex problem into smaller, manageable sub -problems is central to algorithm design. 4. To Create Reusable Solutions  Algorithms can often be generalized and reused for different problems or scenarios. o Example: Sorting algorithms (like quick sort, merg",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_13",
+        "text": "Example: Sorting algorithms (like quick sort, merge sort) can be applied to different datasets.  This reduces redundancy and development time for similar problems. 5. To Ensure Accuracy and Reliability  An algorithm, once designed and tested, ensures consistent and accurate results every time it is executed.  It eliminates human errors in manual computation or ad hoc approaches. 6. To Optimize Decision-Making  Algorithms help in choosing the best solution among many possibilities. o Example: A s",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_14",
+        "text": "solution among many possibilities. o Example: A shortest-path algorithm like Dijkstras helps find the most efficient route in a network. 7. For Scalability  As problem size grows, an algorithm ensures the solution remains practical.  Efficient algorithms handle scalability better, ensuring performance doesn't degrade drastically with larger inputs. 8. To Compare Solutions  By designing and analyzing algorithms, we can compare multiple approaches to solving the same problem.  Big-O notation help",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_15",
+        "text": "to solving the same problem.  Big-O notation helps assess the efficiency of algorithms in terms of time and space complexity. 9. To Automate Tasks  Algorithms are key to automation, enabling computers to perform repetitive tasks faster and more reliably than humans. o Example: Sorting emails into categories, recommending products, etc. 10. For Innovation and Creativity  Designing algorithms encourages innovative thinking and problem-solving skills.  Many modern technologies, such as artificial",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_16",
+        "text": "ls.  Many modern technologies, such as artificial intelligence and machine learning, are built on creative algorithmic solutions. Advantages of Algorithm i)It is easy to understand. ii) Algorithm is a step-wise representation of a solution to a given problem. iii)In Algorithm the problem is broken down into smaller pieces or steps hence, it is easier for the programmer to convert it into an actual program. Disadvantages of Algorithms i)Writing an algorithm takes a long time so it is time consumi",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_17",
+        "text": "algorithm takes a long time so it is time consuming. ii)Branching and Looping statements are difficult to show in Algorithms. Real-World Implications of Algorithm Design  Search Engines: Algorithms like PageRank power Google search results.  Navigation: GPS systems use shortest-path algorithms like A or Dijkstra's.  E-Commerce: Algorithms suggest products or optimize delivery routes.  Healthcare: Algorithms assist in diagnosing diseases and analyzing medical data. 1.2. Correctness of an Algorit",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_18",
+        "text": "yzing medical data. 1.2. Correctness of an Algorithm For any algorithm, we must prove that it always returns the desired output for all legal instances of the problem How to prove that an algorithm is correct? Counterexample (indirect proof ) Searching for counterexamples is the best way to disprove the correctness of some things.  Identify a case for which something is NOT true  If the proof seems hard or tricky, sometimes a counterexample works  Sometimes a counterexample is just easy to see,",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_19",
+        "text": "Sometimes a counterexample is just easy to see, and can shortcut a proof  If a counterexample is hard to find, a proof might be easier Proof by Induction Failure to find a counterexample to a given algorithm does not mean it is obvious that the algorithm is correct. Mathematical induction is a very useful method for proving the correctness of recursive algorithms. 1. Prove base case 2. Assume true for arbitrary value n 3. Prove true for case n  1 Loop Invariant Used to prove the correctness of",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_20",
+        "text": "1 Loop Invariant Used to prove the correctness of iterative algorithms. A loop invariant is a property that holds before and after each iteration of a loop. Steps: Initialization: Prove the invariant holds before the first iteration. Maintenance: Prove that if it holds at the beginning of an iteration, it still holds at the end. Termination: Show that when the loop exits, the invariant ensures the algorithm produces the correct result. Other approaches: Proof by casesenumeration Example: Prove",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_21",
+        "text": "roaches: Proof by casesenumeration Example: Prove x0for all real numbers x. Proof by chain of iffs Example: Prove that a number \ud835\udc5b is even if and only if \ud835\udc5b2 is even. Proof by contradiction Example : Prove that 2 is irrational using proof by contradiction. Proof by contrapositive If \"P implies Q\" and \"Not Q implies Not P\". For example, the assertion \"If it is my car, then it is red\" is equivalent to \"If that car is not red, then it is not mine\". So, to prove \"If P, Then Q\" by the method of contrap",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_22",
+        "text": ", to prove \"If P, Then Q\" by the method of contrapositive means to prove \"If Not Q, Then Not P\". 1.3.Efficiency of an Algorithm An algorithm is said to be efficient and fast,  if it takes less time to execute  consumes less memory space. The performance of an algorithm is measured on the basis of  Time Complexity  Space Complexity Space Complexity Problem-solving using computer requires memory to hold temporary data or final result while the program is in execution. The amount of memory required",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_23",
+        "text": "ram is in execution. The amount of memory required by the algorithm to solve given problem is called space complexity of the algorithm. The space complexity of an algorithm quantifies the amount of space taken by an algorithm to run as a function of the length of the input. It is the amount of memory needed for the completion of an algorithm. To estimate the memory requirement we need to focus on two parts: (1) A fixed part: It is independent of the input size. It includes memory for instruction",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_24",
+        "text": "the input size. It includes memory for instructions (code), constants, variables, etc. (2) A variable part: It is dependent on the input size. It includes memory for recursion stack, referenced variables, etc. Space Complexity (Non Recursive Algorithm) Space complexity-S(P) cSp (Non Recursive Algorithm) Eg:1 Eg: 2 Fixed part component  Space for Instructions  Space for variables(independent of input and output characteristics)  Space for Constants (Sp)Variable part component  Space for Reference",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_25",
+        "text": "s (Sp)Variable part component  Space for Reference variables  Recursion stack space Space Complexity (Recursive Algorithm) Space of recursion stackd epth of recursion(space for 3 components (return Address, Actual Parameter, Local Variable) Eg : 2 1.4.Time Complexity Time complexity of an algorithm, in general, is simply defined as the time taken by an algorithm to implement each statement in the code. It is not the execution time of an algorithm. This entity can be influenced by various factors",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_26",
+        "text": ". This entity can be influenced by various factors like the input size, the methods used and the procedure. An algorithm is said to be the most efficient when the output is produced in the minimal time possible. Time Complexity T(P)ctp Steps to Perform Step Count Analysis 1. Identify basic operations (assignments, comparisons, arithmetic operations, function calls). 2. Count the number of times each operation executes. 3. Express the total count as a function of input size nnn. 4. Determine the",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_27",
+        "text": "as a function of input size nnn. 4. Determine the asymptotic complexity (Big-O notation). Step Count Analysis STATEMENT STEP COUNT Comments and Declarative 0 Steps Assignment 1 Step Conditional 1 Step Loop Condition (for,while  true-n times and false-1 time) (n  1) steps Body of Loop n steps Example 1: Example 2: Algo Swap(a,b)  count  0; Assignment statement - 0 temp  a; count; Assignment statement - 1 a  b; count; Assignment statement - 1 b  temp; count; Assignment statement - 1  Algo Assign(A",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_28",
+        "text": "mp; count; Assignment statement - 1  Algo Assign(A,1,n)  count  0; Assignment statement - 0 int i; for(i1 to n)  count; For statement - n A[i]  0; count; Assignment statement - n  count; False condition of for - 1  In Table Form Number of Steps per Execution stmt - (se) Number of times each stmnt is executed - (Frequency) Total Contribution of each stmnt - [(se)  frequency] O(n) O(n3) stmts se freq total stepssefreq matmul(a[][],b[][]) 0 0  for(int i1;in;i) 1 n1 n1 for (int j1;jn;j) 1 n(n1) n2 n",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_29",
+        "text": "nt i1;in;i) 1 n1 n1 for (int j1;jn;j) 1 n(n1) n2 n  c[i][j]0; 1 nn n2 for (int k1;kn;k) 1 nn(n1) n3n2  c[i][j]c[i][j]a[i][k]b[k][j]; 1 nnn n3    2n33n22n1TOTAL STEPS 1.5.Types of Analysis  To analyze the given algorithm, it is essential to know with which inputs the algorithm takes less time (performing well) and with which inputs the algorithm takes a long time.  There are three types of analysis: Worst case:  In the worst-case analysis, the upper bound on the running time of an algorithm is ca",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_30",
+        "text": "er bound on the running time of an algorithm is calculated.  The cases that causes a maximum number of operations to be executed must be identified. Best case:  In the best-case analysis, the lower bound on the running time of an algorithm is calculated.  The cases that causes a minimum number of operations to be executed must be identified. Average case  Provides a prediction about the running time of the algorithm.  Run the algorithm many times, using many different inputs that come from some",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_31",
+        "text": ", using many different inputs that come from some distribution that generates these inputs, compute the total running time (by adding the individual times), and divide by the number of trials.  Lower Bound  Average Time  Upper Bound Example: let f(n) be the function which represents the given algorithm Linear Search Linear search is also called as sequential search algorithm. It is the simplest searching algorithm. In Linear search, we simply traverse the list completely and match each element o",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_32",
+        "text": "verse the list completely and match each element of the list with the item whose location is to be found. If the match is found, then the location of the item is returned; otherwise, the algorithm returns NULL. The steps used in the implementation of Linear Search are listed as follows - o First, we have to traverse the array elements using a for loop. o In each iteration of for loop, compare the search element with the current array element, and o If the element matches, then return the index o",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_33",
+        "text": "o If the element matches, then return the index of the corresponding array element. o If the element does not match, then move to the next element. o If there is no match or the search element is not present in the given array, return -1. Working of the Algorithm Algorithm Time Complexity Best Case Complexity  The element being searched could be found in the first position.  In this case, the search ends with a single successful comparison.  Thus, in the best-case scenario, the linear search al",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_34",
+        "text": "s, in the best-case scenario, the linear search algorithm performs O(1) operations. Worst Case Complexity  The element being searched may be at the last position in the array or not at all.  In the first case, the search succeeds in n comparisons.  In the next case, the search fails after n comparisons.  Thus, in the worst-case scenario, the linear search algorithm performs O(n) operations. Average Case Complexity When the element to be searched is in the middle of the array, the average case of",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_35",
+        "text": "is in the middle of the array, the average case of the Linear Search Algorithm is O(n). Advantages of Linear Search Algorithm:  Linear search can be used irrespective of whether the array is sorted or not. It can be used on arrays of any data type.  Does not require any additional memory.  It is a well-suited algorithm for small datasets. Disadvantages of Linear Search Algorithm:  Linear search has a time complexity of O(N), which in turn makes it slow for large datasets.  Not suitable for large",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_36",
+        "text": "t slow for large datasets.  Not suitable for large arrays. When to use Linear Search Algorithm?  When we are dealing with a small dataset.  When you are searching for a dataset stored in contiguous memory. Binary Search Binary Search Algorithm is a searching algorithm used in a sorted array by repeatedly dividing the search interval in half. The idea of binary search is to use the information that the array is sorted and reduce the time complexity to O(log N). Below is the step-by-step algorithm",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_37",
+        "text": "y to O(log N). Below is the step-by-step algorithm for Binary Search:  Divide the search space into two halves by finding the middle index mid.  Compare the middle element of the search space with the key.  If the key is found at middle element, the process is terminated.  If the key is not found at middle element, choose which half will be used as the next search space. o If the key is smaller than the middle element, then the left side is used for next search. o If the key is larger than the m",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_38",
+        "text": "for next search. o If the key is larger than the middle element, then the right side is used for next search.  This process is continued until the key is found or the total search space is exhausted. Working of Binary Search Let the element to be search (key56) 1. mid  (beg  end)2 beg  0, end  8, mid  (0  8)2  4. So, 4 is the mid of the array. The Binary Search Algorithm can be implemented in the following two ways  Iterative Binary Search Algorithm  Recursive Binary Search Algorithm (Divide and",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_39",
+        "text": "thm  Recursive Binary Search Algorithm (Divide and Conquer  Unit 2) Iterative Method Analysis of Binary Search Best Case Complexity In Binary search, best case occurs when the element to search is found in first comparison, i.e., when the first middle element itself is the element to be searched. The best-case time complexity of Binary search is O(1). Worst Case Complexity  Case1: Element is present in the array  Case2: Element is not present in the array. Each iteration reduces the search space",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_40",
+        "text": "the array. Each iteration reduces the search space by half: 1. Initially, we have n elements. 2. After 1st iteration, the search space reduces to n2 elements. 3. After 2nd iteration, the search space reduces to n4 elements. 4. After k iterations, the search space reduces to n  2k elements. In the worst case, the search continues until only one element remains: n2k1 Taking the logarithm on both sides: log2(n2k)log21 Since log210, we get: log2nlog22k0 log2nklog220 Since log221, we simplify: klog2n",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_41",
+        "text": "2k0 log2nklog220 Since log221, we simplify: klog2n Thus, the number of iterations (steps) in the worst case is O(log2n). Average Case Complexity The average case time complexity of Binary search is O(logn). Advantages of Binary Search:  Efficient: Binary search has a time complexity of O(log n), which makes it very efficient for searching large sorted arrays.  Simple to implement: Binary search is relatively easy to implement and understand.  Versatile: Binary search can be used in a wide variet",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_42",
+        "text": "satile: Binary search can be used in a wide variety of applications.  Reliable: Binary search is a reliable algorithm that will always find the target element if it exists in the array. Disadvantages of Binary Search:  Requires a sorted array: Binary search only works on sorted arrays. If the array is not sorted, it must be sorted before binary search can be used.  Not suitable for unsorted data: Binary search is not suitable for searching unsorted data, as it will not be able to find the target",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_43",
+        "text": "ed data, as it will not be able to find the target element efficiently.  May not be the best choice for large arrays: For very large arrays (e.g., billions of elements), other search algorithms such as interpolation search or hash tables may be more efficient. Applications of Binary Search:  Searching in sorted arrays: Binary search is used to efficiently find an element in a sorted array.  Database queries: Binary search can be used to quickly locate records in a database table that is sorted b",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_44",
+        "text": "ocate records in a database table that is sorted by a specific key.  Finding the closest match: Binary search can be used to find the closest value to a target value in a sorted list.  Interpolation search: Binary search can be used as a starting point for interpolation search, which is an even faster search algorithm. 1.6.Asymptotic Notation Asymptotic Notations are mathematical tools used to analyze the performance of algorithms by understanding how their efficiency changes as the input size g",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_45",
+        "text": "g how their efficiency changes as the input size grows. These notations provide a concise way to express the behavior of an algorithms time or space complexity as the input size approaches infinity. Asymptotic analysis allows for the comparison of algorithms space and time complexities by examining their performance characteristics as the input size varies. By using asymptotic notations, such as Big O, Big Omega, and Big Theta, we can categorize algorithms based on their worst-case, best-case, o",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_46",
+        "text": "algorithms based on their worst-case, best-case, or average-case time or space complexities, providing valuable insights into their efficiency. From all three notations: worst case, best case, and average case), we can understand that, in every case for a given function f(n) we are trying to find another function g(n) which approximates f(n) at higher values of n. That means g(n) is also a curve which approximates f(n) at higher values of n. Let us assume that the given algorithm is represented",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_47",
+        "text": "us assume that the given algorithm is represented in the form of function f(n). Big-O Notation [Upper Bounding Function]  Worst Case  It is the most widely used notation for Asymptotic analysis.  It specifies the upper bound of a function.  The maximum time required by an algorithm or the worst-case time complexity.  It returns the highest possible output value(big-O) for a given input.  Big-O(Worst Case) It is defined as the condition that allows an algorithm to complete statement execution in",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_48",
+        "text": "s an algorithm to complete statement execution in the longest amount of time possible. If f(n) describes the running time of an algorithm, f(n) is O(g(n)) if there exist a positive constant C and n0 such that, 0  f(n)  cg(n) for all n  n0 Example: Theta notation Theta notation encloses the function from upper bound and lower bound. Since it represents the upper and the lower bound of the running time of an algorithm, it is used for analyzing the average- case complexity of an algorithm. Theta (A",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_49",
+        "text": "average- case complexity of an algorithm. Theta (Average Case) the running times for each possible input combination are added and the average is taken as the average case. Let g and f be the function from the set of natural numbers to itself. The function f is said to be \u0398(g), if there are constants c1, c2  0 and a natural number n0 such that c1 g(n)  f(n)  c2  g(n) for all n  n0. Omega- Notation [Lower Bounding Function]  Best Case  It specifies the lower bound of a function.  The minimum time",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_50",
+        "text": "s the lower bound of a function.  The minimum time required by an algorithm or the best-case time complexity.  It returns the lowest possible output value (big-Omega) for a given input.  Big-Omega (Best Case) It is defined as the condition that allows an algorithm to complete statement execution in the shortest amount of time possible. Given two functions g(n) and f(n), we say that f(n)  \u2126(g(n)), if there exists constants c  0 and n0  0 such that f(n)  cg(n) for all n  n0. Order of Growth Proble",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_51",
+        "text": "f(n)  cg(n) for all n  n0. Order of Growth Problem 1: Problem 2: Find upper bound of running time of a cubic function f(n)  2n3  4n  5. To find upper bound of f(n), we have to find c and n0 such that f(n)  c  g(n) for all n  n0 f(n)  c.g(n) 2n3  4n  5  c  g(n) 2n3  4n  5  2n3 4n3  5n3, for all n 1 2n3  4n  5  11n3 So, c  11, g(n)  n3 and n0  1 Tabular approach 2n3  4n  5  c  g(n) 2n3  4n  5  3n3 Now, manually find out the proper n0, such that f(n)  c  g(n) From Table, for n  3, f(n)  c  g(n) ho",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_52",
+        "text": "n)  c  g(n) From Table, for n  3, f(n)  c  g(n) holds true. So, c  3, g(n)  n 3 and n0  3. There can be such multiple pair of (c, n0) f(n)  O(g(n))  O(n3) for c  11, n0  1 f(n)  O(g(n))  O(n3) for c 3, n0  3 and so on. Problem 3: Find lower bound of running time of quadratic function f(n)  3n2  2n  4. To find lower bound of f(n), we have to find c and n0 such that f(n)  c.g(n) f(n)c  g(n) ) 3n2  2n  4  c  g(n) 3n2  2n  4  3n2  true, for all n  1 Above both inequalities are true and there exists",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_53",
+        "text": "Above both inequalities are true and there exists such infinite inequalities. f(n)  \u03a9 (g(n))  \u03a9 (n2) for c  3, n0  1 f(n)  \u03a9 (g(n))  \u03a9 (n2) for c  1, n0  1 and so on. Problem 4: Find tight bound of running time of quadratic function f(n)  62n  n2 f(n)62n  n2 To prove above statement, we have to find c1, c2 and n0 such that, 0  c1 g(n)  f(n)  c2 g(n) for all n  n0 c1 g(n)  62n  n2  c2  g(n) 6.2n  62n  n2  72n, for all n  1 So, f(n)  \u0398(g(n))  \u0398(2n) for c1  6, c2  7 n0  1 1.7.Insertion Sort Inserti",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_54",
+        "text": "for c1  6, c2  7 n0  1 1.7.Insertion Sort Insertion sort is a simple sorting algorithm that works by iteratively inserting each element of an unsorted list into its correct position in a sorted portion of the list. It is a Stable sorting Why the name Insertion Sort?  At each step, an element is inserted into its correct position among the previously sorted elements.  The process resembles how people sort playing cards in their hands by picking one card at a time and inserting it into the correc",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_55",
+        "text": "ne card at a time and inserting it into the correct spot. Working of the Algorithm Sort the given array [10, 4, 8, 6, 1]. Divide the array into two subsets of sorted and unsorted lists to demonstrate subsets. Iteration starting with the first index [0] as below. Algorithm void insertionSort(int arr[], int n)  for (int i  1; i  n; i)  int key  arr[i]; int j  i - 1; while (j  0  arr[j]  key)  arr[j  1]  arr[j]; j  j - 1;  arr[j  1]  key;   1.8.Analysis of the Algorithm Insertion Sort Best Case(Alr",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_56",
+        "text": "ysis of the Algorithm Insertion Sort Best Case(Already Sorted) Worst Case (Descending Order) se Frequency Total Steps se Frequency Total Steps void insertionSort(int arr[], int n)  - - - - for (int i  1; i  n; i)  1 n [n-1(True) 1(False)] n 1 n [n-1(True) 1(False)] n int key  arr[i]; 1 n-1 n-1 1 n-1 n-1 int j  i - 1; 1 n-1 n-1 1 n-1 while (j  0  arr[j]  key)  1 Will not be true - - 1 True 123...(n1)n(n1)2 - 1 n2 arr[j  1]  arr[j]; 1 - - 1 n(n-1)2 -1 n2 j  j - 1;  1 - - 1 n(n-1)2 -1 n2 arr[j  1]",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_57",
+        "text": "-1 n2 j  j - 1;  1 - - 1 n(n-1)2 -1 n2 arr[j  1]  key;  1 - 1 n-1 n-1 Total 2(n-1) O(n2) Time Complexity of Insertion Sort Best Case : O(n) Worst Case : O(n2) Average Case : O(n2) Advantages of Insertion Sort:  Simple and easy to implement.  Stable sorting algorithm. (A stable sorting algorithm preserves the relative order of records with equal keys, or values. This means that if two records have the same key, the order of those records remains the same after sorting.)  Efficient for small list",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_58",
+        "text": "the same after sorting.)  Efficient for small lists and nearly sorted lists.  Space-efficient as it is an in-place algorithm. (sorts the input data directly within the original data structure, without requiring any additional memory space proportional to the input size) Disadvantages of Insertion Sort: Inefficient for large lists. Not as efficient as other sorting algorithms (e.g., merge sort, quick sort) for most cases. 1.9.Different Design Paradigms  Techniques Algorithm Design paradigms in co",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_59",
+        "text": "digms  Techniques Algorithm Design paradigms in computer science and software development refer to overarching approaches or strategies for solving problems and designing algorithms. Each paradigm has distinct characteristics and is suited to specific types of problems. Divide and Conquer  Description: Breaks a problem into smaller sub -problems, solves each sub -problem independently, and combines their results. It is a top-down approach.  Key Idea: Recursion and splitting the input.  Examples:",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_60",
+        "text": "dea: Recursion and splitting the input.  Examples: o Merge Sort o Quick Sort o Binary Search o Fast Fourier Transform (FFT) Dynamic Programming (DP)  Description: Solves problems by breaking them into overlapping sub-problems and solving each sub- problem only once, storing the result for future reference.  In divide and conquer, many times the recursively solved subproblems can result in the same computation being performed multiple times. This problem arises when identical problems occur repea",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_61",
+        "text": "problem arises when identical problems occur repeatedly in a recursion.  Dynamic programming is used to avoid this issue by storing the results of subproblems in a table and referring to that table to check if we have already calculated the solution to a subproblem before computing it again  Key Idea: Optimization using memoization (top-down) or tabulation (bottom-up).  Examples: o Fibonacci sequence o Longest Common Subsequence (LCS) o Knapsack problem o Matrix Chain Multiplication Greedy Algor",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_62",
+        "text": "problem o Matrix Chain Multiplication Greedy Algorithms  Description:  Greedy method is used to solve the optimization problem.  An optimization problem is one in which we are given a set of input values, which are required either to be maximized or minimized (known as objective), i.e. some constraints or conditions.  Makes a locally optimal choice at each step with the hope that this leads to a globally optimal solution.  Greedy Algorithm always makes the choice (greedy criteria) looks best at",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_63",
+        "text": "makes the choice (greedy criteria) looks best at the moment, to optimize a given objective.  The greedy algorithm doesn't always guarantee the optimal solution however it generally produces a solution that is very close in value to the optimal.  Key Idea: Optimization problems, Simplicity and no backtracking.  Examples: Dijkstras algorithm (shortest path) Prims algorithm (minimum spanning tree) Huffman encoding (data compression) Backtracking  Description: Builds a solution in crementally and a",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_64",
+        "text": "escription: Builds a solution in crementally and abandons a solution (backtracks) as soon as it determines that it cannot lead to a valid solution.  Key Idea: Depth-first search with pruning.  Examples: o N-Queens problem o Sudoku solver o Subset sum problem Branch and Bound  Description: Similar to backtracking but uses bounds to eliminate large portions of the search space, improving efficiency. More than 1 solution is possible.  Key Idea: Pruning based on a bounding function.  Examples: o Tra",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_65",
+        "text": "ing based on a bounding function.  Examples: o Traveling Salesman Problem (TSP) o Knapsack problem Brute Force  Description: Examines all possible solutions to find the correct one.  Key Idea: Exhaustive search.  Examples: o Password cracking o Finding all permutations of a string Randomized Algorithms  Description: Uses random numbers to influence decisions during execution.  Key Idea: Randomness improves performance or simplifies logic.  Examples: o Randomized Quick Sort o Monte Carlo methods",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_66",
+        "text": "es: o Randomized Quick Sort o Monte Carlo methods o Hashing 1.10. Comparison of Greedy, Divide and Conquer, Dynamic Programming Comparison of Backtracking, Branch and Bound Advantages of Greedy Algorithms Simple and easy to understand: Greedy algorithms are often straightforward to implement and reason about. Efficient for certain problems: They can provide optimal solutions for specific problems. Fast execution time: Greedy algorithms generally have lower time complexity compared to other algor",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_67",
+        "text": "have lower time complexity compared to other algorithms for certain problems. Intuitive and easy to explain : The decision-making process in a greedy algorithm is often easy to understand and justify. Can be used as building blocks for more complex algorithms: Greedy algorithms can be combined with other techniques to design more sophisticated algorithms for challenging problems. Disadvantages of the Greedy Approach Not always optimal: Greedy algorithms prioritize local optima over global optima",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_68",
+        "text": "orithms prioritize local optima over global optima, leading to suboptimal solutions in some cases. Difficult to prove optimality: Proving the optimality of a greedy algorithm can be challenging, requiring careful analysis. Sensitive to input order: The order of input data can affect the solution generated by a greedy algorithm. Limited applicability: Greedy algorithms are not suitable for all problems Recurrence Relation Advantages of Divide and Conquer:  Efficiency: Divide and conquer algorithm",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_69",
+        "text": "Conquer:  Efficiency: Divide and conquer algorithms typically have a time complexity of O(n log n), which is more efficient than many other algorithms for large datasets.  Simplicity: Divide and conquer algorithms are often easy to understand and implement.  Parallelizability: Divide and conquer algorithms can be easily parallelized, as each subproblem can be solved independently.  Cache-friendliness: Divide and conquer algorithms tend to have good cache performance, as they access data in a pre",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_70",
+        "text": "od cache performance, as they access data in a predictable pattern. Disadvantages of Divide and Conquer:  Recursion overhead: Divide and conquer algorithms use recursion, which can lead to significant overhead in terms of stack space and function calls.  Not suitable for all problems: Divide and conquer algorithms are not suitable for all types of problems. They are most effective for problems that can be recursively divided into smaller subproblems.  Limited memory efficiency: Divide and conque",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_71",
+        "text": "ems.  Limited memory efficiency: Divide and conquer algorithms can require a significant amount of memory, as they create multiple copies of the input data.  Difficult to analyze: The time and space complexity of divide and conquer algorithms can be difficult to analyze, especially for complex problems. Recursion is a method to solve a problem where the solution depends on solutions to smaller sub problems of the same problem. Recursive functions (function calling itself) are used to solve probl",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_72",
+        "text": "(function calling itself) are used to solve problems based on Recursion. The main challenge with recursion is to find the time complexity of the Recursive function. Advantages of Dynamic Programming Efficiency: Reduces the time complexity by avoiding redundant calculations through the reuse of already computed solutions. Optimal Solutions: Ensures that the solutions to problems are optimal by solving and combining the results of subproblems. Handles Complex Problems: Can solve problems that are",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_73",
+        "text": "dles Complex Problems: Can solve problems that are difficult or impossible to solve using other techniques, especially those with overlapping subproblems. Improves Recursive Algorithms: Converts exponential-time recursive algorithms into polynomial-time solutions. Disadvantages of Dynamic Programming High Space Complexity: Can require significant memory to store solutions for all subproblems, Complexity in Formulation: Identifying subproblems, defining recurrence relations, and setting up base c",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_74",
+        "text": "fining recurrence relations, and setting up base cases can be challenging and may require deep insight into the problem. Difficult to Debug: Debugging dynamic programming solutions can be harder due to the complexity of the state transitions and table updates. May Lead to Suboptimal Performance: If not carefully implemented (e.g., unnecessary recalculations or improper state representation), DP can still result in inefficient solutions. Advantages of Backtracking Algorithms  Simple and Intuitive",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_75",
+        "text": "s of Backtracking Algorithms  Simple and Intuitive: Easy to understand and implement for a wide range of problems.  Flexibility: Can be applied to many types of problems, especially combinatorial and constraint satisfaction problems.  Exhaustive Search: Guarantees finding a solution if one exists by exploring all possible options.  Effective Pruning: Can reduce the search space significantly by eliminating paths that cannot lead to a solution.  Handles Complex Problems: Suitable for problems wit",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_76",
+        "text": "andles Complex Problems: Suitable for problems with complex constraints Disadvantages of Backtracking Algorithms  High Time Complexity: Can be very slow due to the need to explore all possible solutions, leading to exponential time complexity in many cases.  Memory Intensive: Uses a lot of memory, especially for deep recursion and large decision trees.  Inefficient for Large Problems: Not practical for large-scale problems due to the combinatorial explosion of possibilities.  Non-Optimal Solutio",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_77",
+        "text": "l explosion of possibilities.  Non-Optimal Solutions: While it finds a solution, it may not be the most efficient or optimal one without further optimization.  Requires Careful Pruning: Effective use of backtracking depends on good pruning techniques, which can be complex to implement correctly. Advantages of Branch and Bound  Time Complexity: The Branch and Bound algorithm does not explore all nodes in the tree. Thereby, the time complexity is significantly lesser than most other algorithms.  O",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_78",
+        "text": "ignificantly lesser than most other algorithms.  Optimal Solution: If the branching is done reasonably, the algorithm can find the optimal solution in a reasonable period.  Clear Pattern: The Branch and Bound algorithm does not repeat the notes to explore the tree for the candidate solutions; instead, it follows a minimal path to derive the optimal solution. Disadvantages of Branch and Bound  Time-consuming: Based on the size of the problem, the number of nodes that are computed might be too lar",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_79",
+        "text": "number of nodes that are computed might be too large in a worst-case scenario, making it a time-consuming process.  Parallelization: The branching out of possible solutions provides scope for speculative parallelism. However, when alternative actions are considered for the said action, the branch and bound calculator finds difficulty. 1.11. Mathematical Induction Mathematical Induction is a technique of proving a statement, theorem or formula which is thought to be true, for each and every natur",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_80",
+        "text": "ch is thought to be true, for each and every natural number n. By generalizing this in form of a principle which we would use to prove any mathematical statement is Principle of Mathematical Induction. Mathematical Induction Steps Base Step: Prove P(k) is true for k 1 Assumption Step: Let P(k) is true for all k in N and k  1 Induction Step: Prove P(k1) is true using basic mathematical properties. Example 1: For any positive integer number n, prove that n3  2n is always divisible by 3 Solution: L",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_81",
+        "text": "e that n3  2n is always divisible by 3 Solution: Let P(n): n3  2n is divisible by 3 be the given statement. Step 1: Basic Step Firstly we prove that P(1) is true. Let n  1 in n3  2n  13  2(1)  3 As 3 is divisible by 3. Hence, P(1) is true. Step 2: Assumption Step Let us assume that P(k) is true Then, k3  2k is divisible by 3 Thus, we can write it as k3  2k  3n, (where n is any positive integer).(i) Step 3: Induction Step Now we have to prove that algebraic expression (k  1)3  2(k  1) is divisibl",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_82",
+        "text": "algebraic expression (k  1)3  2(k  1) is divisible by 3  (k  1)3  2(k  1)  k3  3k2  5k  3  (k3  2 k)  (3k2  3k  3)  3n  3(k2  k  1) from eq(i)  3(n  k2  k  1) As it is a multiple of 3 we can say that it is divisible by 3. Thus, P(k1) is true i.e. (k  1)3  2(k  1) is be divisible by 3. Now by the Principle of Mathematical Induction, we can say that, P(n): n3  2n is divisible by 3 is true. Example 2: Prove that the formula for the sum of n natural numbers holds true for all natural numbers, that",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_83",
+        "text": "numbers holds true for all natural numbers, that is, 1  2  3  4  5  ....  n  n(n1)2 using the principle of mathematical induction. Solution: Suppose P(n): 1  2  3  4  5  ....  n  n(n1)2 Here we use the concept of mathematical induction and prove this across the following three steps. Base Step: To prove P(1) is true. For n  1, LHS  1 RHS  1(11)2  22  1 Hence LHS  RHS  P(1) is true. Assumption Step: Assume that P(n) holds for n  k, i.e., P(k) is true  1  2  3  4  5  ....  k  k(k1)2 --- (1) Induc",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_84",
+        "text": "true  1  2  3  4  5  ....  k  k(k1)2 --- (1) Induction Step: Now we will prove that P(k1) is true. To prove: 1  2  3  4  ...  (k1)  (k1)(k2)2 Consider LHS  1  2  3  4  ...  (k1)  1  2  3  4  ... k  (k1)  (1  2  3  4  ...  k)  k1  k(k1)2  k1 [Using (1)]  [k(k1)  2(k1)]2  (k1)(k2)2  RHS  P(n) is true for n  k1 Hence, by the principle of mathematical induction, P(n) is true for all natural numbers n. Example 3: Prove that 2n  n for all positive integers n. Solution: We will prove the result using t",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_85",
+        "text": "gers n. Solution: We will prove the result using the principle of mathematical induction. Assume P(n): 2n  n Base Step: To prove P(1) is true. For n  1, we have 21  2  1  P(1) is true. Assumption Step: Assume that P(n) holds for n  k, i.e., P(k) is true  2k  k --- (1) Induction Step: Now we will prove that P(k1) is true. To prove: 2k1  k  1 Consider 2k1  2.2k  2k [Using (1)]  k  k  k  1 [Because any natural number other than 1 is greater than 1.]  P(n) is true for n  k1 Hence, by the principle o",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_86",
+        "text": "P(n) is true for n  k1 Hence, by the principle of mathematical induction, P(n) is true for all natural numbers n. Example 4: Prove the following formula using the Principle of Mathematical Induction.12  32  52  ...  (2n - 1)2  n(2n-1)(2n1)3 Solution: Assume P(n): 12  32  52  ...  (2n - 1)2  n(2n-1)(2n1)3 Base Step: To prove P(1) is true. For n  1, LHS  12  1 RHS  1(21-1)(211)3  [1(2-1)(21)]3  33  1 Hence LHS  RHS  P(1) is true. Assumption Step: Assume that P(n) holds for n  k, i.e., P(k) is tr",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_87",
+        "text": "Assume that P(n) holds for n  k, i.e., P(k) is true  12  32  52  ...  (2k - 1)2  k(2k-1)(2k1)3 --- (1) Induction Step: Now we will prove that P(k1) is true. To prove: 12  32  52  ...  (2k - 1)2  [2(k1) - 1]2 (k1)[2(k1)-1][2(k1)1]3 Consider LHS  12  32  52  ...  (2k - 1)2  [2(k1) - 1]2  [12  32  52  ...  (2k - 1)2]  [2(k1) - 1]2  k(2k-1)(2k1)3  [2(k1) - 1]2 [Using (1)]  k(2k-1)(2k1)3  (2k1)2  [k(2k-1)(2k1)  3(2k1)2]3  (2k1)[k(2k-1)3(2k1)]3  (2k1)[2k2 - k  6k  3]3  (2k1)[2k2  5k  3]3  (2k1)[2k2",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_88",
+        "text": "[2k2 - k  6k  3]3  (2k1)[2k2  5k  3]3  (2k1)[2k2  2k  3k  3]3  (2k1)[2k(k1)  3(k1)]3  (2k1)(2k3)(k1)3  (k1)[2(k1)-1][2(k1)1]3  RHS  P(n) is true for n  k1 Hence, by the principle of mathematical induction, P(n) is true for all natural numbers n. 1.12. What is a Recurrence Relation? Whenever any function makes a recursive call to itself, its time can be computed by a Recurrence Relation. Recurrence Relation is simply a mathematical relationequation that can give the value of any term in terms of",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_89",
+        "text": "n that can give the value of any term in terms of some previous smaller terms. For example, T(n)  T(n-1)  N. It is a recurrence relation because the value of the nth term is given in its previous term i.e (n-1)the term. Formulating Recurrence Relation Formulating a recurrence relation involves expressing a problem in terms of smaller instances of itself. Here are the key steps in the formulation process: Steps to Formulate a Recurrence Relation: 1. Identify the problem size (n): Determine how th",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_90",
+        "text": "1. Identify the problem size (n): Determine how the input size reduces in recursive calls. 2. Express the problem in terms of sub problems: Break the problem into smaller instances and relate them mathematically. 3. Define base cases: Establish stopping conditions for recursion (typically small values of n where direct computation is possible). 4. Write the recurrence relation: Formulate the equation representing the problem using smaller sub problems. Example 1:Framing Recurrence relation for F",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_91",
+        "text": "blems. Example 1:Framing Recurrence relation for Factorial computation Algorithm The factorial of a number n, denoted as n!, is the product of all positive integers from 1 to n. It is defined as: n!n(n1)! For example: 5!54321120 Step-by-Step Breakdown for Recurrence Relation: 1. Identify the Problem Size (n) o The input size is n, the number for which we need to compute the factorial. 2. Break the Problem into Subproblems o The factorial of n is dependent on the factorial of (n1):  n!n(n1)! o Th",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_92",
+        "text": "dependent on the factorial of (n1):  n!n(n1)! o The problem reduces to computing (n1)!, making it a recursive problem. 3. Define the Base Case o The factorial of 0 or 1 is defined as 1:  0!1  1!1 o Base case: T(1)O(1) 4. Write the Recurrence Relation Since computing n! involves a single multiplication with (n1)!, the recurrence relation is: T(n)T(n1)O(1) Final Recurrence Relation for Factorial: Example 2: Framing Recurrence relation for Binary Search Binary Search is an efficient algorithm for s",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_93",
+        "text": "arch Binary Search is an efficient algorithm for searching an element in a sorted array. It works by repeatedly dividing the array in half and checking whether the middle element is the target. If not, it eliminates one half of the array and continues searching in the remaining half. Step-by-Step Breakdown for Recurrence Relation: 1. Identify the problem size (n) o The input size is n (the number of elements in the sorted array). 2. Break the problem into sub problems o At each step, Binary Sear",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_94",
+        "text": "blem into sub problems o At each step, Binary Search compares the middle element A[mid]A[mid]A[mid] with the target:  If A[mid] target  Found, return index.  If A[mid] target  Search in the left half.  If A[mid] target  Search in the right half. o Since we only search one half of the array in each step, the problem size reduces to n2. 3. Define the Base Case o When n1 we directly compare the element: T(1)O(1) 4. Write the Recurrence Relation o The time complexity function T(n) depends on:  A sin",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_95",
+        "text": "e time complexity function T(n) depends on:  A single comparison (constant time O(1)).  Recursively searching in one half of the array. T(n)T(n2)O(1) Final Recurrence Relation for Binary Search: Example 3: Framing Recurrence relation for Merge Sort T(n)T(n1)O(1) with the base case: T(1)O(1) T(n)T(n2)O(1) with the base case: T(1)O(1) o The input size is n, the number of elements in the array. 2. Break the Problem into Sub problems o The array is divided into two halves:  The first half has n2 ele",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_96",
+        "text": "ivided into two halves:  The first half has n2 elements.  The second half has n2 elements. o We recursively sort both halves. 3. Work Done at Each Step o Dividing the array: Takes constant time O(1). o Recursively sorting both halves: Takes 2T(n2). o Merging the two sorted halves: Takes O(n) time. o Total work done  sorting both halves  merging them. 4. Write the Recurrence Relation Since we divide the problem into two subproblems of size n2 and do O(n) work in merging, the recurrence relation i",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_97",
+        "text": "do O(n) work in merging, the recurrence relation is: T(n)2T(n2)O(n) 5. Define the Base Case o When n1, the array is already sorted  Takes constant time. o Base case: T(1)O(1) Final Recurrence Relation for Merge Sort: 1.13. Bubble Sorting Algorithm and its Analysis Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in the wrong order. This algorithm is not suitable for large data sets. It is a stable sorting. The bubble sort makes mul",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_98",
+        "text": "It is a stable sorting. The bubble sort makes multiple passes through a list. It compares adjacent items and exchanges those that are out of order. Each pass through the list places the next largest value in its proper place. In essence, each item bubbles up to the location where it belongs. The working of the Bubble sort is shown below. After the end of Pass 1  Round 1, the largest element will reach its proper place. After the end of Pass 2  Round 2, the second largest element will reach its",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_99",
+        "text": "ound 2, the second largest element will reach its proper place. T(n)2T(n2)O(n) with the base case: T(1)O(1) Algorithm void bubbleSort(arr[], n)  int i,j,temp; for (i  0; i  n-1; i)  for (j  0; j  n-i-1; j)  Last i elements are already in place  if(arr[j]  arr[j1])  tempa[j]; a[j]a[j1]; a[j1]temp;     Bubble Sort Best Case(Already Sorted) Worst Case (Descending Order) se Frequency Total Steps se Frequency Total Steps void bubbleSort(arr[], n)  - - - - int i,j,temp; - for (i  0; i  n-1; i)  1 n [n",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_100",
+        "text": "- - int i,j,temp; - for (i  0; i  n-1; i)  1 n [n-1(True) 1(False)] n 1 n [n-1(True) 1(False)] n for (j  0; j  n-i-1; j)  1 n-1 n-1 1 n-1 n-1 if(arr[j]  arr[j1])  1 n-1 n-1 1 n-1 n-1 tempa[j]; 1 Will not be true - - 1 True 123...(n1)(n1)n2 n2 a[j]a[j1]; 1 - - 1 (n1)n2 n2 a[j1]temp;  1 - - 1    1 1 Time Complexity O(n) O(n2) Time Complexity of Bubble Sort Best Case : O(n) Worst Case : O(n2) Average Case : O(n2) 1.14. Optimized Version of Bubble Sort void bubbleSort(int arr[], int n)  int i, j,te",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_101",
+        "text": "ort void bubbleSort(int arr[], int n)  int i, j,temp; bool swapped; for (i  0; i  n - 1; i)  swapped  false; for (j  0; j  n - i - 1; j)  if (arr[j]  arr[j  1])  tempa[j]; a[j]a[j1]; a[j1]temp; swapped  true;   if (swapped  false)  If no two elements were swapped by inner loop, then break break;   1.15. Solving recurrence have three famous methods  Substitution Method  Recursive Tree Method  Master Theorem Substitution Method: Substitution Method is very famous method for solving any recurrences",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_102",
+        "text": "is very famous method for solving any recurrences. There are two types of substitution methods-  Forward Substitution  Backward Substitution Forward Substitution: It is called Forward Substitution because here we substitute recurrence of any term into next terms. It uses following steps to find Time using recurrences-  Start with initial term  Generate first few terms  Identify any pattern that can be expressed by a close end formula  Check its validity Example 1 T(n) 2T(n-1)1 T(1) 1 Solution T",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_103",
+        "text": "validity Example 1 T(n) 2T(n-1)1 T(1) 1 Solution T(1)  1 T(2)  2T(2-1)1  2T(1)1 T(3)  2T (3-1)1  2T (2)1  231 7 T(4)  2T (4-1)1  2T (3)1  271 15 1,3,7,15 .. The Pattern is 2 n  1 T(n)  2 n  1  O ( 2 n ) Example 2 The pattern is Example 3: Backward Substitution Steps: 1. Start from the recurrence relation : T(n) T(n-1)1 2. Express T(n) in terms of T(n-1),T(n-2),T(n-3).until a common pattern is identified among all 3. Based on the identified pattern : Frame the General Equation 4. Now find a value",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_104",
+        "text": "n : Frame the General Equation 4. Now find a value for k with respect to n, so that T(n-k) equates to initial condition 5. Frame the solution by leading to a closed end formula or direct Example 1: Example 2 Example 3: T(n)T(n-1)1 T(0)0 Example 4: T(n)2T(n2)n Example 5: T(n)T(n-1)n4 Recursion tree Method What is Recursion Tree? A recursion tree is a visual representation of the recursive calls made by a function.  Used to devise a good guess  Tree-like structure that shows the sequence of calls",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_105",
+        "text": "e-like structure that shows the sequence of calls and the relationships between them.  Root node: The initial function call  Child nodes: Recursive calls made by the function  Leaf nodes: Base cases that terminate the recursion  Edges: Represent the recursive calls between nodes.  Recursion trees help analyze and understand recursive algorithms Time complexity: By counting the number of nodes Space complexity: By looking at the maximum depth  Termination: By checking if the tree has a finite num",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_106",
+        "text": "mination: By checking if the tree has a finite number of nodes. Recursion Tree Time Complexity Calculation  Recursion Tree model the costs of a recursive execution of an algorithm  A tree node represents the cost of a sub-problem  Recursion Tree consists of 2 parts: (i) Cost of non-recursive part (ii) Cost of recursive call on smaller input size  Total Cost Cost of individual node at depth iSum up the cost of all noes at depth i  Sum up all per-level costs of Recursion Tree (i.e.) Total cost  Co",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_107",
+        "text": "evel costs of Recursion Tree (i.e.) Total cost  Cost of Leaf nodes (Lc)  Cost of Internal Nodes (Ic) Example 1: Example 2: Example 3: Example 4: 1.16. Masters Theorem for Decreasing Functions Consider a relation of type  T(n)  aT(n-b)  f(n), where, a  1 and b  1, f(n) is asymptotically positive Here, n  size of the problem a  number of sub-problems in the recursion n-b  size of the sub problems based on the assumption that all sub-problems are of the same size. f(n)  represents the cost of work",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_108",
+        "text": "the same size. f(n)  represents the cost of work done outside the recursion - (nk), where k  0. T(n)  aT(n-b)  f(n), If the recurrence relation is in the above given form, then there are three cases in the master theorem to determine the asymptotic notations   if a  1, T(n)  O (nk1)  if a  1, T(n)  O (anb  nk)  if a  1, T(n)  O (nk) Example 1: Consider a recurrence relation given as T(n)  T(n-1)  n2 In this problem, a  1, b  1 and f(n)  O(nk)  n2, giving us k  2. Since a  1, case 1 must be appl",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_109",
+        "text": "2, giving us k  2. Since a  1, case 1 must be applied for this equation. To calculate, T(n)  O(nk1)  n21  n3 Therefore, T(n)  O(n3) is the tight bound for this equation. Example 2: Consider a recurrence relation given as T(n)  2T(n-1)  n In this problem, a  2, b  1 and f(n)  O(nk)  n, giving us k  1. Since a  1, case 2 must be applied for this equation. To calculate, T(n)  O(a nb  nk)  O(2 n1  n1)  O(n2n) Therefore, T(n)  O(n2n) is the tight bound for this equation. Example 3: Consider a recurre",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_110",
+        "text": "d for this equation. Example 3: Consider a recurrence relation given as T(n)  n4 In this problem, a  0 and f(n)  O(nk)  n4, giving us k  4 Since a  1, case 3 must be applied for this equation. To calculate, T(n)  O(nk)  O(n4)  O(n4) Therefore, T(n)  O(n4) is the tight bound for this equation. 1.17. Merge Sort - Iterative In Iterative merge sort, we implement merge sort in a bottom-up manner. This is how it works:  We start by sorting all sub-arrays of length 1  Then, we sort all sub-arrays of le",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_111",
+        "text": "ys of length 1  Then, we sort all sub-arrays of length 2 by merging length-1 sub-arrays  Then, we sort all sub-arrays of length 4 by merging length-2 sub-arrays  We repeat the above step for sub-arrays of lengths 8, 16, 32, and so on until the whole array is sorted How Does Iterative Merge Sort Work? Lets assume that the array Arr[]  3, 2, 1, 9, 5, 4, 10, 11 of size N  8 is to be sorted. Arrays of length 1 are trivially sorted. Step 1: First, we take sub_size  1 and merge all pairs of sub-arrays",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_112",
+        "text": "take sub_size  1 and merge all pairs of sub-arrays of size 1. Step 2: Then, we multiply sub_size by 2, and sub_size becomes 2. Now, we merge all pairs of sub- arrays of size 2. Step 3: Again, we multiply sub_size by 2, and sub_size becomes 4, and we merge all pairs of sub- arrays of size 4. Now, we stop, as sub_size is  N and the array is sorted. void merge(int Arr[], int l, int m, int r)  int i, j, k; int n1  m  l  1; int n2  r  m; int L[n1], R[n2]; for (i  0; i  n1; i) L[i]  Arr[l  i]; for (j",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_113",
+        "text": "n2]; for (i  0; i  n1; i) L[i]  Arr[l  i]; for (j  0; j  n2; j) R[j]  Arr[m  1 j]; i  0, j  0, k  l; while (i  n1  j  n2)  if (L[i]  R[j])  Arr[k]  L[i]; i;  else  Arr[k]  R[j]; j;  k;  while (i  n1)  Arr[k]  L[i]; i; k;  while (j  n2)  Arr[k]  R[j]; j; k;   void merge_sort(int Arr[], int N) for(int sub_size1;sub_sizeN;sub_size2)  for(int L0; LN; L(2sub_size))  int Midmin(Lsub_size-1,N-1); int Rmin(L2sub_size-1,N-1); merge(Arr, L,Mid,R);    Time Complexity Analysis 1. Number of Iterations  The a",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_114",
+        "text": "Complexity Analysis 1. Number of Iterations  The array size starts with subarrays of size 1.  Each iteration doubles the size of the subarrays.  The number of iterations is determined by how many times we can double the size before reaching n.  Since curr_size starts at 1 and doubles (1  2  4  8  ...), the number of iterations is: O(logn) 2. Merging Process in Each Iteration  Every iteration merges all elements once.  Merging two sorted subarrays of total size n takes O(n) time.  Since merging h",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_115",
+        "text": "of total size n takes O(n) time.  Since merging happens in every iteration, the total merging time is: O(n) per iteration Overall Time Complexity Since the process runs O(log n) times and each iteration takes O(n) time: O(nlogn) Advantages of Iterative Merge Sort  Worst-case, best-case, and average-case time complexity of merge sort are O(NlogN), making it very efficient.  Iterative merge sort is slightly faster than recursive merge sort. Disadvantages of Iterative Merge Sort  Space complexity",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "data_unit 1 DAA.pdf_chunk_116",
+        "text": "antages of Iterative Merge Sort  Space complexity of iterative merge sort is O(N)",
+        "metadata": {}
+    },
+    {
         "chunk_id": "company_faqs_document.txt_chunk_0",
         "text": "Company Overview  FAQ Portal Welcome to the internal knowledge base. Here are the core guidelines for the team: Q: What are the official working hours and hybrid policies? A: Our core hours are 8:30 AM to 3:30 PM. We follow a hybrid model where teams gather in-office on every other day except wednesdays or thursdays. Remote work is optional on either days.Leave is on every saturdays and sundays Q: How do I submit an expense report for project components? A: All receipts must be uploaded to the i",
         "metadata": {
@@ -11,7 +696,7 @@
                 "onboarding"
             ],
             "type": "documentation",
-            "date": "2026-06-09"
+            "date": "2026-06-15"
         }
     },
     {
@@ -26,7 +711,7 @@
                 "onboarding"
             ],
             "type": "documentation",
-            "date": "2026-06-09"
+            "date": "2026-06-15"
         }
     },
     {
@@ -41,7 +726,7 @@
                 "deployment"
             ],
             "type": "standard_operating_procedure",
-            "date": "2026-06-09"
+            "date": "2026-06-15"
         }
     },
     {
@@ -56,7 +741,7 @@
                 "deployment"
             ],
             "type": "standard_operating_procedure",
-            "date": "2026-06-09"
+            "date": "2026-06-15"
         }
     },
     {
@@ -71,7 +756,7 @@
                 "developer"
             ],
             "type": "tutorial",
-            "date": "2026-06-09"
+            "date": "2026-06-15"
         }
     },
     {
@@ -86,7 +771,7 @@
                 "developer"
             ],
             "type": "tutorial",
-            "date": "2026-06-09"
+            "date": "2026-06-15"
         }
     }
 ]

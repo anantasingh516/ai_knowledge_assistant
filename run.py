@@ -3,6 +3,8 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 import ollama
 from core.search_engine import VectorSearchEngine
+from fastapi import UploadFile, File, BackgroundTasks
+import shutil
 app = FastAPI(
     title="AI Knowledge Assistant API (Ollama Powered)",
     description="Grounded Generation Engine using Local Vector Indexing and Ollama"
@@ -74,6 +76,42 @@ async def ask_knowledge_assistant(payload: QueryRequest):
         answer=clean_answer,
         citations=citations_list
     )
+@app.post("/upload")
+def upload_document(file: UploadFile = File(...), background_tasks: BackgroundTasks = BackgroundTasks()):
+    """
+    Accepts a file stream synchronously, writes it to disk immediately, 
+    and offloads the heavy vector embedding math to a background worker thread.
+    """
+    import os
+    import shutil
+
+    # Define absolute target data vault path
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    target_dir = os.path.join(base_dir, "data")
+    os.makedirs(target_dir, exist_ok=True)
+    
+    file_path = os.path.join(target_dir, file.filename)
+    
+    try:
+        # Write incoming file bytes to disk instantly
+        with open(file_path, "wb") as buffer:
+            shutil.copyfileobj(file.file, buffer)
+            
+        print(f"[FASTAPI] File saved to {file_path}. Handing off indexing to background thread...")
+        
+        # 🔥 SOLUTION: Delegate the heavy embedding calculations to a background thread worker
+        background_tasks.add_task(search_engine.index_processed_vault)
+        
+        # Instantly reply to Streamlit so the UI never times out or freezes
+        return {
+            "status": "success", 
+            "message": f"'{file.filename}' received safely! The embedding engine is indexing it in the background."
+        }
+        
+    except Exception as e:
+        if os.path.exists(file_path):
+            os.remove(file_path)
+        raise HTTPException(status_code=500, detail=f"Upload initialization failure: {str(e)}")
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run("run:app", host="127.0.0.1", port=8000, reload=True)
