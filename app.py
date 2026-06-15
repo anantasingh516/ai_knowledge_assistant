@@ -138,12 +138,16 @@ with tab1:
                         
                         response_placeholder.markdown(ai_answer)
                         st.session_state.messages.append({"role": "assistant", "content": ai_answer})
-                        
                         if citations:
                             with st.expander("📚 View Grounded Source References"):
                                 for i, cite in enumerate(citations):
                                     st.markdown(f"**Reference {i+1}:** {cite['source']}")
-                                    st.caption(f"Chunk ID: `{cite['id']}` | Semantic Proximity Distance: `{cite['match_score']}`")
+                                    st.caption(f"Semantic Proximity Distance: `{cite['match_score']}`")
+                                    with st.expander(f"📄 View Content Snippet (Chunk ID: {cite['id']})", expanded=False):
+                                        # Use code markdown or warning layout to make the document chunk look separated and distinct
+                                        st.markdown(f"*{cite.get('text', 'No text content sent from backend index.')}*")
+                                    
+                                    st.markdown("---") # Thin divider line between individual citations
                     else:
                         response_placeholder.error(f"Backend Server Error (Code {res.status_code})")
                 except requests.exceptions.ConnectionError:
