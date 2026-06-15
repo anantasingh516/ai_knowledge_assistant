@@ -2,20 +2,27 @@ import os
 import time
 import json
 from datetime import datetime
-from fastapi import FastAPI, HTTPException, UploadFile, File, BackgroundTasks
+from fastapi import FastAPI, HTTPException, UploadFile, File, BackgroundTasks, Header
 from pydantic import BaseModel
 import shutil
-from ollama import Client  # 🔥 UPDATED: Import Client explicitly
+from ollama import Client
 from core.search_engine import VectorSearchEngine
+from core.compliance import ComplianceSanitizer  # 🔐 Import compliance sanitizer
+from dotenv import load_dotenv
+
+# Load security parameters straight from local root environment
+load_dotenv()
+EXPECTED_TOKEN = os.getenv("APP_SECRET_TOKEN", "fallback_default_token")
+OLLAMA_HOST_ADDR = os.getenv("OLLAMA_HOST", "http://127.0.0.1:11434")
 
 app = FastAPI(
-    title="AI Knowledge Assistant API (Ollama Powered)",
-    description="Grounded Generation Engine using Local Vector Indexing and Ollama with Dynamic Parameter Control"
+    title="AI Knowledge Assistant API (Secured Node)",
+    description="Grounded Generation Engine using Local Vector Indexing, Token Guardrails, and PII Compliance Filtering"
 )
 
 search_engine = VectorSearchEngine()
-# 🔥 NEW: Instantiate a persistent, thread-safe local client node connection pool
-ollama_client = Client(host="http://127.0.0.1:11434")
+ollama_client = Client(host=OLLAMA_HOST_ADDR)
+sanitizer = ComplianceSanitizer()
 
 LOGS_DIR = "logs"
 os.makedirs(LOGS_DIR, exist_ok=True)
@@ -32,23 +39,34 @@ class QueryResponse(BaseModel):
     citations: list
     metrics: dict
 
+def verify_access_token(token: str):
+    """Internal validation guardrail checking API client identity headers."""
+    if not token or token != EXPECTED_TOKEN:
+        raise HTTPException(status_code=401, detail="Unauthorized access request. Invalid or missing X-API-Token header.")
+
 @app.post("/ask", response_model=QueryResponse)
-async def ask_knowledge_assistant(payload: QueryRequest):
+async def ask_knowledge_assistant(payload: QueryRequest, x_api_token: str = Header(None)):
     """
-    RAG Query Flow Endpoint powered by an explicit Ollama Client connection pool
+    Secured RAG Query Endnode. Redacts PII patterns and enforces header security checks live.
     """
+    # 1. Enforce access authorization check
+    verify_access_token(x_api_token)
+    
     start_time = time.time()
-    user_question = payload.question
+    
+    # 2. Sanitize user queries right at entry barrier line
+    raw_question = payload.question
+    sanitized_question = sanitizer.sanitize_text(raw_question)
     
     try:
-        matched_chunks = search_engine.search(user_question, top_k=payload.top_k)
+        matched_chunks = search_engine.search(sanitized_question, top_k=payload.top_k)
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Vector index search failure: {str(e)}")
         
     if not matched_chunks:
         latency = time.time() - start_time
         return QueryResponse(
-            question=user_question,
+            question=sanitized_question,
             answer="I couldn't find any relevant documents in the knowledge base to answer this.",
             citations=[],
             metrics={"latency": round(latency, 3), "grounding_overlap": 0.0}
@@ -74,31 +92,24 @@ async def ask_knowledge_assistant(payload: QueryRequest):
 
     system_instructions = (
         "You are an expert internal AI assistant. Your task is to accurately answer the user's question "
-        "using ONLY the provided document context. \n\n"
-        "CRITICAL INSTRUCTIONS:\n"
-        "1. Prioritize structural lists, numbered points, and sequential steps exactly as they are written in the text.\n"
-        "2. If the text explicitly lists 7 numbered items, output all 7 items cleanly. Do not let slight formatting variations or paragraph splits convince you otherwise.\n"
-        "3. Do not assume information is missing just because a heading uses slightly different wording than a list item.\n"
-        "4. If the answer truly cannot be found, state that you do not know. Never hallucinate facts."
+        "using ONLY the provided document context. Prioritize structural lists, numbered points, and sequential steps exactly as they are written in the text. "
+        "If the answer truly cannot be found, state that you do not know. Never hallucinate facts."
     )
     
     user_prompt = (
         f"--- CONTEXT START ---\n{context_accumulator}\n--- CONTEXT END ---\n\n"
         f"Using the context above, provide a comprehensive, numbered list answering this exact question:\n"
-        f"Question: {user_question}"
+        f"Question: {sanitized_question}"
     )
     
     try:
-        # 🔥 FIXED: Use our persistent ollama_client object instance instead of the global short-lived endpoint
         response = ollama_client.chat(
             model="llama3.1", 
             messages=[
                 {"role": "system", "content": system_instructions},
                 {"role": "user", "content": user_prompt}
             ],
-            options={
-                "temperature": payload.temperature
-            }
+            options={"temperature": payload.temperature}
         )
         clean_answer = response["message"]["content"].strip()
         
@@ -110,15 +121,12 @@ async def ask_knowledge_assistant(payload: QueryRequest):
     
     context_words = set(context_accumulator.lower().split())
     response_words = set(clean_answer.lower().split())
-    
-    if response_words:
-        overlap_ratio = len(context_words.intersection(response_words)) / len(response_words)
-    else:
-        overlap_ratio = 0.0
+    overlap_ratio = len(context_words.intersection(response_words)) / len(response_words) if response_words else 0.0
 
+    # Sanitize logged inputs completely to maintain security standards on local storage disk
     log_entry = {
         "timestamp": timestamp,
-        "query": user_question,
+        "query": sanitized_question,
         "response": clean_answer,
         "latency_seconds": round(latency, 3),
         "retrieved_chunk_ids": retrieved_chunk_ids,
@@ -134,14 +142,17 @@ async def ask_knowledge_assistant(payload: QueryRequest):
         print(f"[METRIC LOGGING ERROR] Could not commit performance record to disk: {str(e)}")
 
     return QueryResponse(
-        question=user_question,
+        question=sanitized_question,
         answer=clean_answer,
         citations=citations_list,
         metrics={"latency": round(latency, 3), "grounding_overlap": round(overlap_ratio, 3)}
     )
 
 @app.post("/upload")
-def upload_document(file: UploadFile = File(...), background_tasks: BackgroundTasks = BackgroundTasks()):
+def upload_document(file: UploadFile = File(...), x_api_token: str = Header(None), background_tasks: BackgroundTasks = BackgroundTasks()):
+    # Enforce token validation check before processing upload
+    verify_access_token(x_api_token)
+    
     base_dir = os.path.dirname(os.path.abspath(__file__))
     target_dir = os.path.join(base_dir, "data")
     os.makedirs(target_dir, exist_ok=True)
