@@ -72,8 +72,9 @@ async def ask_knowledge_assistant(payload: QueryRequest):
         })
 
     system_instructions = (
-        "You are an expert internal AI assistant. Answer the user's question accurately using ONLY the provided document context. "
-        "If the answer cannot be found or deduced from the context, state clearly that you do not know. Do not hallucinate."
+        "You are an expert internal AI assistant. Answer the user's question accurately using the provided document context. "
+        "Carefully read all numbered lists and headings. If the context explicitly lists or explains items, trust the full list over any conflicting summary numbers. "
+        "Do not hallucinate facts outside the text."
     )
     
     user_prompt = f"--- CONTEXT START ---\n{context_accumulator}\n--- CONTEXT END ---\n\nQuestion: {user_question}"

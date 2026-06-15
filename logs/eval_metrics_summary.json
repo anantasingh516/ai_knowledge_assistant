@@ -1,0 +1,23 @@
+{
+    "avg_recall_at_k": 1.0,
+    "avg_citation_coverage": 1.0,
+    "evaluated_at_k": 3,
+    "total_queries_tested": 3,
+    "detailed_breakdown": [
+        {
+            "query": "What are the 7 stages of problem solving?",
+            "recall": 1.0,
+            "citation_coverage": 1.0
+        },
+        {
+            "query": "What is the company hybrid work policy and remote days?",
+            "recall": 1.0,
+            "citation_coverage": 1.0
+        },
+        {
+            "query": "What are the rules regarding code freeze windows for production?",
+            "recall": 1.0,
+            "citation_coverage": 1.0
+        }
+    ]
+}

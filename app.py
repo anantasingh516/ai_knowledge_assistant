@@ -222,7 +222,7 @@ with tab2:
             with st.spinner("Querying vector indexing coordinates programmatically..."):
                 try:
                     from core.evaluator import run_automated_evaluation
-                    run_automated_evaluation(k=2)
+                    run_automated_evaluation(k=3)
                     st.success("RAG Metrics recalculated successfully!")
                 except Exception as e:
                     st.error(f"Execution error running automated benchmarking system: {e}")
